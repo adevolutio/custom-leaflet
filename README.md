@@ -4,7 +4,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Install
 <code>
-npm install --save custom-leaflet
+npm install @adevolutio/custom-leaflet@0.1.0
 </code>
 
 ### Dependeces
