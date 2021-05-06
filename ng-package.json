@@ -1,0 +1,13 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/evo-leaflet",
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "@asymmetrik/ngx-leaflet",
+    "@asymmetrik/ngx-leaflet-draw",
+    "leaflet-draw",
+    "leaflet"
+  ]
+}

@@ -1,0 +1,45 @@
+.map-container {
+  height: 100%;
+
+  .map-frame {
+    height: 100%;
+
+    #map {
+      height: 100%;
+    }
+  }
+}
+
+:host ::ng-deep .leaflet-touch .leaflet-control-layers-toggle {
+  height: 30px;
+  width: 30px;
+}
+
+:host ::ng-deep .recenter {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  clear: both;
+  background-color: #fff;
+  border-radius: 2px;
+  &:hover{
+    background: lightgray;
+  }
+
+  .back-center {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    width: 30px;
+    padding: 3px;
+    height: 30px;
+    line-height: 0;
+    cursor: pointer;
+
+    .material-icons{
+      margin-top: 3px;
+    }
+  }
+}

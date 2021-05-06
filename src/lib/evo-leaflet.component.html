@@ -1,0 +1,21 @@
+<div class="map-container" *ngIf="dOptions !== null">
+  <div class="map-frame">
+    <div
+      leaflet
+      [leafletOptions]="leafletOptions"
+      (leafletMapReady)="onMapReady($event)"
+      (leafletMapMoveEnd)="onZoomEnd()"
+      leafletDraw
+      [leafletDrawOptions]="dOptions"
+      (leafletDrawStart)="onDrawStart()"
+      (leafletDrawCreated)="onDrawCreated($event)"
+      (leafletDrawEdited)="onDrawEdited($event)"
+      (leafletDrawEditStop)="onDrawEditStop($event)"
+      (leafletDrawEditStart)="onDrawEditStart()"
+      (leafletDrawDeleted)="onDrawDelete()"
+      id="map"
+    >
+      <div [leafletLayer]="drawItems"></div>
+    </div>
+  </div>
+</div>
